@@ -1,0 +1,335 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo um fundo suave para o corpo */
+body { 
+    font-family: 'Arial', sans-serif;
+    background-color: #d9d9ee; /* Cor de fundo */
+    color: #333;
+    line-height: 1.6;
+
+    /* Padrão de fundo com pontos circulares */
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 10%, transparent 10%);
+    background-size: 20px 20px; /* Tamanho dos pontos */
+}
+
+
+
+
+
+
+/* Barra de navegação no topo */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Logo dentro da barra de navegação */
+.nav-top .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Menu de navegação */
+.nav-top .menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Links do menu */
+.nav-top .menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+/* Efeito de hover para os links */
+.nav-top .menu a:hover {
+    color: #ffbf00;  /* Cor de destaque */
+}
+
+/* Centralização do conteúdo principal */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilizando o título principal */
+#main-title {
+    font-size: 2.5em; /* Ajuste o tamanho do título conforme necessário */
+    color: #333; /* Cor do texto */
+}
+
+
+/* Estilizando o nome (Di) */
+#name {
+    color: #ffbf00;  /* Cor destacada */
+}
+
+/* Estilo da imagem */
+.main-image {
+    width: 100%;      /* Faz a imagem ocupar toda a largura disponível */
+    max-width: 240px; /* Limita o tamanho máximo da imagem */
+    height: auto;     /* Mantém a proporção da imagem */
+    border-radius: 8px; /* Bordas arredondadas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    margin-top: 15px;  /* Adiciona margem acima da imagem */
+    margin-bottom: 10px; /* Adiciona margem abaixo da imagem */
+}
+
+
+
+
+/* Estilo para o parágrafo */
+p {
+    font-size: 1rem;
+    margin-top: 20px;
+    color: #666;
+    max-width: 600px;
+}
+
+/* Responsividade */
+
+/* Para telas pequenas (celulares) */
+@media (max-width: 600px) {
+    /* Ajusta a barra de navegação */
+    .nav-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    /* Menu se tornando vertical e centralizado */
+    .nav-top .menu {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .nav-top .menu a {
+        font-size: 1.1rem;
+    }
+
+    /* Ajuste no título para telas pequenas */
+    #main-title {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 0.9rem;
+    }
+}
+
+/* Para tablets e telas de até 768px */
+@media (max-width: 768px) {
+    .nav-top {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+    }
+
+    .nav-top .menu {
+        flex-direction: column;
+        gap: 15px;
+        margin-top: 15px;
+    }
+
+    .nav-top .menu a {
+        font-size: 1.2rem;
+    }
+
+    #main-title {
+        font-size: 2.2rem;
+    }
+
+    p {
+        font-size: 1rem;
+    }
+}
+
+/*PAGINA ABOUT HTML/*
+
+/* Estilo para a galeria de imagens */
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Alinha as imagens no centro */
+}
+
+/* Estilo para as imagens pequenas */
+.image-gallery img.small {
+    width: 45%; /* As imagens pequenas ocupam 45% da largura */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Alinhamento à esquerda para as imagens pequenas */
+.image-gallery img.left {
+    align-self: flex-start; /* Alinha as imagens à esquerda dentro do flex container */
+}
+
+/* Imagens padrão (sem a classe 'small') */
+.image-gallery img {
+    width: 60%; /* As imagens grandes ocupam 60% da largura */
+    height: auto;
+    border-radius: 8px;
+    object-fit: cover;
+}
+
+/* Ajustes responsivos */
+@media (max-width: 1024px) {
+    /* Para tablets e telas menores */
+    .image-gallery img.small {
+        width: 48%; /* Imagens pequenas ficam 48% da largura */
+    }
+
+    .image-gallery img {
+        width: 48%; /* Imagens grandes ficam 48% da largura */
+    }
+}
+
+@media (max-width: 600px) {
+    /* Para smartphones */
+    .image-gallery img.small {
+        width: 100%; /* As imagens pequenas ocupam 100% da largura */
+    }
+
+    .image-gallery img {
+        width: 100%; /* As imagens grandes também ocupam 100% da largura */
+    }
+}
+
+/* ÍCONE CAMERA FOTOGRÁFICA/*
+/* Estilo principal */
+.center {
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#main-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+/* Estilo do botão da câmera */
+.camera-container {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.camera-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.camera-button img {
+    width: 50px; /* Tamanho do ícone da câmera */
+    transition: transform 0.3s ease;
+}
+
+.camera-button:hover img {
+    transform: scale(1.1); /* Efeito de zoom no ícone da câmera */
+}
+
+/* Estilo para a galeria de imagens */
+.image-gallery {
+    display: none; /* Inicialmente oculta */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+/* Imagens dentro da galeria */
+.image-gallery img {
+    border-radius: 8px;
+    object-fit: cover;
+    width: 45%;
+    height: auto;
+}
+
+/* Alinhamento à esquerda para as imagens pequenas */
+.image-gallery img.left {
+    align-self: flex-start;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .image-gallery img {
+        width: 48%;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-gallery img {
+        width: 100%;
+    }
+}
+
+/* PARTE DOS CONTACTOS/*
+
+/* ESTILO DO TEMA CLARO E ESCURO/*
+/* Estilo para o modo claro */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #d9d9ee; /* Cor de fundo clara */
+    color: #333; /* Cor do texto para o tema claro */
+    line-height: 1.6;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+/* Estilo para o modo escuro */
+body.dark-mode {
+    background-color: #121212; /* Cor de fundo escura */
+    color: #fff; /* Cor do texto para o tema escuro */
+}
+
+/* Estilos para o botão de alternância */
+.theme-toggle {
+    background-color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* Mudança do botão no modo escuro */
+body.dark-mode .theme-toggle {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Outros estilos para a página */
+.center {
+    text-align: center;
+    padding: 20px;
+}
+
+#main-title {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+    
+    

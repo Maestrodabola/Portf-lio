@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre - Di</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Barra de Navegação -->
+    <header>
+        <nav class="nav-top">
+            <!-- Logo -->
+            <div class="logo">
+                <img src="assets/1.png" alt="Logo" width="70px" height="60px">
+            </div>
+
+            <!-- Menu de navegação -->
+            <div class="menu">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="menu.html">Contact</a>
+            </div>
+        </nav>
+
+        <!-- Conteúdo principal da página About -->
+        <main class="center">
+            <h1 id="main-title">Sobre Mim</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur commodi magni? Earum adipisci tempore neque maiores deleniti? Dolore blanditiis nisi vel ducimus reiciendis corporis dolor. Necessitatibus ut non asperiores!.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quod, perferendis delectus doloremque quos ipsa natus. Error est modi deleniti! At recusandae corporis quae expedita rerum laboriosam possimus consequuntur quo?</p>
+        <!-- Ícone da Câmera -->
+    
+        <div class="camera-container">
+            <button id="show-gallery" class="camera-button">
+                <img src="assets/photo-camera-digital-picture-868f47.webp" alt="Câmera" />
+            </button>
+        </div>
+        
+        <div class="image-gallery" id="gallery" style="display: none;">
+            <img class="small left" src="assets/IMG_4665.jpg" alt="Imagem 1">
+            <img src="assets/IMG_4467.jpg" alt="Imagem 2">
+            <img class="small left" src="assets/IMG_4358.jpg" alt="Imagem 3">
+            <img src="assets/IMG_4179.jpg" alt="Imagem 4">
+        </div>
+        
+        <script>
+            // Obter referências aos elementos
+            const showGalleryButton = document.getElementById("show-gallery");
+            const gallery = document.getElementById("gallery");
+            const cameraIcon = showGalleryButton.querySelector('img');
+        
+            // Adicionar um evento de clique ao botão da câmera
+            showGalleryButton.addEventListener("click", function() {
+                // Ocultar o ícone da câmera
+                cameraIcon.style.display = "none";
+                
+                // Alternar a visibilidade da galeria
+                if (gallery.style.display === "none" || gallery.style.display === "") {
+                    gallery.style.display = "block"; // Mostrar a galeria
+                } else {
+                    gallery.style.display = "none"; // Ocultar a galeria
+                }
+            });
+        </script>
+        
+        
+        
+    </main>
+
+    </header>
+    <script src="script.js"></script>
+    <!-- Rodapé -->
+    <footer class="center">
+        <p>&copy; 2024 Di - Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
