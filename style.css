@@ -107,7 +107,7 @@ p {
 
 /* Responsividade */
 
-/* Para telas pequenas (celulares) */
+/* Para telemóvel */
 @media (max-width: 600px) {
     /* Ajusta a barra de navegação */
     .nav-top {
@@ -116,7 +116,7 @@ p {
         padding: 15px;
     }
 
-    /* Menu se tornando vertical e centralizado */
+    /* Menu para ficar vertical e centralizado */
     .nav-top .menu {
         flex-direction: column;
         gap: 10px;
@@ -137,7 +137,7 @@ p {
     }
 }
 
-/* Para tablets e telas de até 768px */
+/* Para tablets  */
 @media (max-width: 768px) {
     .nav-top {
         flex-direction: column;

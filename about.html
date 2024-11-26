@@ -5,6 +5,42 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sobre - Di</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Estilo para os ícones */
+        .icon-container {
+            display: flex;
+            gap: 10px;
+        }
+        .icon-container button {
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+        .icon-container img {
+            width: 40px;
+            height: 40px;
+        }
+
+        /* Estilo para a galeria de imagens */
+        .music-gallery {
+            display: none; /* Inicialmente escondida */
+            margin-top: 20px;
+        }
+        .music-gallery img {
+            width: 100%; /* Imagens com largura 100% */
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para a galeria da câmera */
+        .image-gallery {
+            display: none; /* Inicialmente escondida */
+            margin-top: 20px;
+        }
+        .image-gallery img {
+            width: 100%; /* Imagens com largura 100% */
+            margin-bottom: 10px;
+        }
+    </style>
 </head>
 <body>
     <!-- Barra de Navegação -->
@@ -26,48 +62,79 @@
         <!-- Conteúdo principal da página About -->
         <main class="center">
             <h1 id="main-title">Sobre Mim</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aspernatur commodi magni? Earum adipisci tempore neque maiores deleniti? Dolore blanditiis nisi vel ducimus reiciendis corporis dolor. Necessitatibus ut non asperiores!.</p>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Illo quod, perferendis delectus doloremque quos ipsa natus. Error est modi deleniti! At recusandae corporis quae expedita rerum laboriosam possimus consequuntur quo?</p>
-        <!-- Ícone da Câmera -->
-    
-        <div class="camera-container">
-            <button id="show-gallery" class="camera-button">
-                <img src="assets/photo-camera-digital-picture-868f47.webp" alt="Câmera" />
-            </button>
-        </div>
-        
-        <div class="image-gallery" id="gallery" style="display: none;">
-            <img class="small left" src="assets/IMG_4665.jpg" alt="Imagem 1">
-            <img src="assets/IMG_4467.jpg" alt="Imagem 2">
-            <img class="small left" src="assets/IMG_4358.jpg" alt="Imagem 3">
-            <img src="assets/IMG_4179.jpg" alt="Imagem 4">
-        </div>
-        
-        <script>
-            // Obter referências aos elementos
-            const showGalleryButton = document.getElementById("show-gallery");
-            const gallery = document.getElementById("gallery");
-            const cameraIcon = showGalleryButton.querySelector('img');
-        
-            // Adicionar um evento de clique ao botão da câmera
-            showGalleryButton.addEventListener("click", function() {
-                // Ocultar o ícone da câmera
-                cameraIcon.style.display = "none";
+            <p>Nos meus tempos livres para além de gostar de estar com amigos e de jogar à bola tenho duas grandes paixões que são a fotografia e a música.
                 
-                // Alternar a visibilidade da galeria
-                if (gallery.style.display === "none" || gallery.style.display === "") {
-                    gallery.style.display = "block"; // Mostrar a galeria
-                } else {
-                    gallery.style.display = "none"; // Ocultar a galeria
-                }
-            });
-        </script>
-        
-        
-        
-    </main>
+                <p>A fotografia tornou-se uma paixão,para mim, pois acho incrível ,que com um simples clique no botão de uma máquina,podemos registrar momentos que ficaram para sempre e isso é algo que me fascina muito. Se clicares na câmera fotográfica em baixo, terás acesso a algumas fotos que tirei.</p>
 
+                <p>Tenho como género músical favorito o rap,pois gosto das batidas,das rimas, do ritmo usado, da forma como se pode utilizar a música para contar uma história ou para usar como forma de intervenção crítica sobre algo. No ícone da coluna,ao clicar no mesmo,verás alguns dos meus artistas favoritos! </p>
+            
+        
+            <!-- Ícones para a câmera e coluna -->
+            <div class="icon-container">
+                <!-- Ícone da Câmera -->
+                <button id="show-gallery" class="camera-button">
+                    <img src="assets/photo-camera-digital-picture-868f47.webp" alt="Câmera" />
+                </button>
+
+                <!-- Ícone da Coluna -->
+                <button id="toggle-sound" class="sound-button">
+                    <img src="assets/coluna musica preto e branco.avif" alt="Coluna" />
+                </button>
+            </div>
+
+            <!-- Galeria de Imagens da Câmera -->
+            <div class="image-gallery" id="gallery">
+                <img class="small left" src="assets/IMG_4665.jpg" alt="Imagem 1">
+                <img src="assets/IMG_4467.jpg" alt="Imagem 2">
+                <img class="small left" src="assets/IMG_4358.jpg" alt="Imagem 3">
+                <img src="assets/IMG_4179.jpg" alt="Imagem 4">
+            </div>
+
+            <!-- Imagens Artistas Musicais  -->
+            <div class="music-gallery" id="music-gallery">
+                <img src="assets/2Pac imagem.jpg" alt="2Pac">
+                <img src="assets/Nas.jpg" alt="Nas">
+                <img src="assets/mobb deep.jpg" alt="Mobb Deep">
+                <img src="assets/Notorious B.I.G.jpg" alt="Notorious BIG">
+                <img src="assets/Big L.jpg" alt="Big L">
+                <img src="assets/Big Punisher.avif" alt="Big Pun">
+
+
+
+            </div>
+
+        </main>
     </header>
+
+    <script>
+        // Obter referências aos elementos
+        const showGalleryButton = document.getElementById("show-gallery");
+        const gallery = document.getElementById("gallery");
+
+        const toggleSoundButton = document.getElementById("toggle-sound");
+        const musicGallery = document.getElementById("music-gallery");
+
+        // Adicionar um evento de clique ao botão da câmera
+        showGalleryButton.addEventListener("click", function() {
+            // Alternar a visibilidade da galeria de imagens da câmera
+            if (gallery.style.display === "none" || gallery.style.display === "") {
+                gallery.style.display = "block"; // Mostrar a galeria da câmera
+            } else {
+                gallery.style.display = "none"; // Ocultar a galeria da câmera
+            }
+        });
+
+        // Adicionar um evento de clique ao botão da coluna
+        toggleSoundButton.addEventListener("click", function() {
+            // Alternar a visibilidade da galeria de imagens musicais
+            if (musicGallery.style.display === "none" || musicGallery.style.display === "") {
+                musicGallery.style.display = "block"; // Mostrar a galeria de música
+            } else {
+                musicGallery.style.display = "none"; // Ocultar a galeria de música
+            }
+        });
+    </script>
+    
     <script src="script.js"></script>
     <!-- Rodapé -->
     <footer class="center">
@@ -75,3 +142,5 @@
     </footer>
 </body>
 </html>
+
+
