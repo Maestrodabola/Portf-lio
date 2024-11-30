@@ -1,0 +1,292 @@
+/* Resetando alguns estilos padrões */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Definindo um fundo suave para o corpo */
+body { 
+    font-family: 'Arial', sans-serif;
+    background-color: #d9d9ee; /* Cor de fundo */
+    color: #333;
+    line-height: 1.6;
+
+    /* Padrão de fundo com pontos circulares */
+    background-image: radial-gradient(circle, rgba(0, 0, 0, 0.1) 10%, transparent 10%);
+    background-size: 20px 20px; /* Tamanho dos pontos */
+}
+
+
+
+
+
+
+/* Barra de navegação no topo */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+}
+
+/* Logo dentro da barra de navegação */
+.nav-top .logo img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Menu de navegação */
+.nav-top .menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Links do menu */
+.nav-top .menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+/* Efeito de hover para os links */
+.nav-top .menu a:hover {
+    color: #ffbf00;  /* Cor de destaque */
+}
+
+/* Centralização do conteúdo principal */
+.center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 50px 20px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+/* Estilo geral do corpo da página */
+body {
+    transition: opacity 1s ease-out; /* Transição suave de opacidade */
+    opacity: 1;
+}
+
+/* Classe de carregamento (quando a página estiver carregando) */
+body.loading {
+    opacity: 0;
+}
+
+/* Outros estilos do site */
+.center {
+    text-align: center;
+}
+
+/* Menu e links */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+
+
+
+
+/* Estilo geral do corpo da página */
+body {
+    transition: opacity 1s ease-out; /* Transição suave de opacidade */
+    opacity: 1;
+}
+
+/* Classe de carregamento (quando a página estiver carregando) */
+body.loading {
+    opacity: 0;
+}
+
+/* Outros estilos do site */
+.center {
+    text-align: center;
+}
+
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegação */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+/* Galeria de imagens */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;  /* Garante que a imagem não ultrapasse o tamanho do container */
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que as imagens cubram o espaço sem distorção */
+    transition: transform 0.3s ease; /* Transição suave para a imagem */
+}
+
+/* Efeito de transição ao passar o mouse */
+.image-container:hover {
+    transform: scale(1.1); /* Aumenta a imagem */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Adiciona sombra ao redor */
+}
+
+.image-container:hover img {
+    transform: scale(1.1); /* Aumenta a imagem dentro do container */
+}
+
+/* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Barra de navegação */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+
+/* Texto acima de todas as imagens */
+.gallery-caption {
+    text-align: center;
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f5f5f5;  /* Cor de fundo suave */
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Galeria de imagens */
+.image-gallery {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+    margin-top: 30px;
+    flex-wrap: wrap;  /* Permite que as imagens se movam para uma nova linha em telas pequenas */
+}
+
+.image-container {
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    margin: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.image-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+/* Efeito de transição ao passar o mouse */
+.image-container:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+.image-container:hover img {
+    transform: scale(1.1);
+}
+
+/* Media Query para dispositivos móveis */
+@media (max-width: 768px) {
+    .image-gallery {
+        justify-content: center; /* Centraliza as imagens em telas pequenas */
+    }
+
+    .image-container {
+        width: 150px;  /* Diminuímos o tamanho das imagens */
+        height: 150px;
+        margin: 10px;
+    }
+}

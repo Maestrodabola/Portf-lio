@@ -70,6 +70,42 @@ body {
     max-width: 800px;
     margin: 0 auto;
 }
+/* Estilo geral do corpo da página */
+body {
+    transition: opacity 1s ease-out; /* Transição suave de opacidade */
+    opacity: 1;
+}
+
+/* Classe de carregamento (quando a página estiver carregando) */
+body.loading {
+    opacity: 0;
+}
+
+/* Outros estilos do site */
+.center {
+    text-align: center;
+}
+
+/* Menu e links */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+.menu a {
+    text-decoration: none;
+    color: #333;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+
+
 
 /* Estilizando o título principal */
 #main-title {
@@ -111,58 +147,69 @@ p {
 @media (max-width: 600px) {
     /* Ajusta a barra de navegação */
     .nav-top {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        padding: 15px;
+        padding: 10px 20px;
+    
     }
 
-    /* Menu para ficar vertical e centralizado */
+    /* Logo dentro da barra de navegação */
+    .nav-top .logo img {
+        max-width: 100%;
+        height: auto;
+    }
+    
+    /* Menu de navegação */
     .nav-top .menu {
-        flex-direction: column;
-        gap: 10px;
-        margin-top: 15px;
+        display: flex;
+        gap: 20px;
     }
-
+    
+    /* Links do menu */
     .nav-top .menu a {
-        font-size: 1.1rem;
+        text-decoration: none;
+        font-size: 1rem;
+        color: white;
+        font-weight: 600;
+        transition: color 0.3s;
     }
+   
 
     /* Ajuste no título para tela do telemóvel */
-    #main-title {
-        font-size: 2rem;
-    }
 
-    p {
-        font-size: 0.9rem;
-    }
-}
 
 /* Para tablets  */
 @media (max-width: 768px) {
     .nav-top {
-        flex-direction: column;
+        display: flex;
+        justify-content: space-between;
         align-items: center;
-        padding: 15px;
+        padding: 10px 20px;
     }
+    
 
-    .nav-top .menu {
-        flex-direction: column;
-        gap: 15px;
-        margin-top: 15px;
-    }
-
-    .nav-top .menu a {
-        font-size: 1.2rem;
-    }
-
-    #main-title {
-        font-size: 2.2rem;
-    }
-
-    p {
-        font-size: 1rem;
-    }
+    /* Logo dentro da barra de navegação */
+.nav-top .logo img {
+    max-width: 100%;
+    height: auto;
 }
+
+/* Menu de navegação */
+.nav-top .menu {
+    display: flex;
+    gap: 20px;
+}
+
+/* Links do menu */
+.nav-top .menu a {
+    text-decoration: none;
+    font-size: 1rem;
+    color: white;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
 
 /*PAGINA ABOUT HTML/*
 
@@ -287,7 +334,7 @@ p {
     }
 }
 
-/* PARTE DOS CONTACTOS/*
+
 /*Nome dos Rappers nas imagens/*
 .music-gallery {
     display: flex;
@@ -332,5 +379,66 @@ p {
 #main-title {
     font-size: 2.5em;
     margin-bottom: 20px;
+
+    /* Resetando margens e padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-    
+
+/* Barra de navegação */
+.nav-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
+
+.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+}
+
+.menu a:hover {
+    color: #ff6347;
+}
+
+/* Conteúdo principal */
+.center {
+    text-align: center;
+    padding: 20px;
+}
+
+/* Estilos para o link do Instagram */
+.instagram-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #E4405F; /* Cor do Instagram */
+    color: white; /* Cor do texto */
+    text-decoration: none;
+    font-size: 18px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.instagram-link:hover {
+    background-color: #C13584; /* Cor de destaque do Instagram ao passar o mouse */
+    color: white; /* Garantir que o texto fique branco no hover */
+}
+
+.instagram-link:active {
+    transform: scale(0.98); /* Efeito de clique */
+}
+
+/* Rodapé */
+footer.center {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: white;
+}
