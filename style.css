@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 
-/* Definindo um fundo suave para o corpo */
+/* Definindo um fundo suave */
 body { 
     font-family: 'Arial', sans-serif;
     background-color: #d9d9ee; /* Cor de fundo */
@@ -76,7 +76,7 @@ body {
     opacity: 1;
 }
 
-/* Classe de carregamento (quando a página estiver carregando) */
+/* Classe de carregamento (quando a página estiver a carregar) */
 body.loading {
     opacity: 0;
 }
@@ -114,7 +114,7 @@ body.loading {
 }
 
 
-/* Estilizando o nome (David) */
+/* Estilizando o (David) */
 #name {
     color: #ffbf00;  /* Cor destacada */
 }
@@ -278,7 +278,7 @@ p {
     margin-bottom: 20px;
 }
 
-/* Estilo do botão da câmera */
+/* Estilo do botão da camera */
 .camera-container {
     margin-top: 20px;
     text-align: center;
@@ -413,6 +413,8 @@ p {
     padding: 20px;
 }
 
+
+/*Link do insta na Página Home*/
 /* Estilos para o link do Instagram */
 .instagram-link {
     display: inline-block;
