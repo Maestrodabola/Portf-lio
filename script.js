@@ -43,4 +43,24 @@ document.querySelectorAll('.transition-link').forEach(link => {
 });
 
 
-
+document.addEventListener('DOMContentLoaded', function() {
+    const title = document.getElementById('main-title');
+    const text = title.innerText;
+    title.innerHTML = '';  // Limpar o conteúdo original
+  
+    // Envolver cada letra com <span>, e adicionar <span> para espaços
+    for (let i = 0; i < text.length; i++) {
+      const char = text[i];
+      
+      if (char === ' ') {
+        const space = document.createElement('span');
+        space.classList.add('space');
+        title.appendChild(space);  // Adicionar o espaço
+      } else {
+        const span = document.createElement('span');
+        span.textContent = char;
+        title.appendChild(span);  // Adicionar a letra
+      }
+    }
+  });
+  
