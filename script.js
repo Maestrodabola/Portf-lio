@@ -41,3 +41,6 @@ document.querySelectorAll('.transition-link').forEach(link => {
         }, 1000); // Tempo igual ao da transição
     });
 });
+
+
+

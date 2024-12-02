@@ -101,9 +101,12 @@ body.loading {
 }
 
 .menu a:hover {
-    color: #ff6347;
+    color: #333;
 }
 
+.nav-top .menu a:hover {
+    color: #0f0f0e;  /* Cor de destaque */
+}
 
 
 
@@ -138,7 +141,7 @@ body.loading {
 }
 
 .menu a:hover {
-    color: #ff6347;
+    color: #333;
 }
 
 /* Resetando margens e padding */
@@ -165,7 +168,7 @@ body.loading {
 }
 
 .menu a:hover {
-    color: #ff6347;
+    color: #333;
 }
 
 /* Galeria de imagens */
@@ -219,16 +222,23 @@ body.loading {
     color: white;
 }
 
+.nav-top:hover {
+    background-color: #eef11b; /* Mudar a cor de fundo ao passar o mouse */
+    transform: translateY(-2px); /* Efeito de elevação na barra de navegação */
+}
+
 .menu a {
     text-decoration: none;
     color: white;
     padding: 10px;
 }
 
-.menu a:hover {
-    color: #ff6347;
-}
 
+
+
+.nav-top .menu a:hover {
+    transform: translateY(-2px); /* Efeito de elevação do link */
+}
 
 /* Texto acima de todas as imagens */
 .gallery-caption {
@@ -250,7 +260,7 @@ body.loading {
     align-items: center;
     padding: 20px;
     margin-top: 30px;
-    flex-wrap: wrap;  /* Permite que as imagens se movam para uma nova linha em telas pequenas */
+    flex-wrap: wrap;  
 }
 
 .image-container {
@@ -268,7 +278,7 @@ body.loading {
     transition: transform 0.3s ease;
 }
 
-/* Efeito de transição ao passar o mouse */
+/* Efeito de transição ao passar o rato */
 .image-container:hover {
     transform: scale(1.1);
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
@@ -285,7 +295,7 @@ body.loading {
     }
 
     .image-container {
-        width: 150px;  /* Diminuímos o tamanho das imagens */
+        width: 150px;  
         height: 150px;
         margin: 10px;
     }
